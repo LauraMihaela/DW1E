@@ -1,0 +1,2266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>2.1. INTRODUCCIÓN — Gestión de Bases de Datos</title>
+    <link rel="stylesheet" href="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/haiku.css" type="text/css">
+    <link rel="stylesheet" href="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/badge_only.css" type="text/css">
+    <script async="" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/analytics.js"></script><script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/documentation_options.js"></script>
+    <script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/jquery-2.js"></script>
+    <script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/jquery-migrate-1.js"></script>
+    <script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/underscore.js"></script>
+    <script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/doctools.js"></script>
+    <script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/translations.js"></script>
+    <script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/readthedocs-doc-embed.js"></script>
+    <link rel="index" title="Índice" href="https://gestionbasesdatos.readthedocs.io/es/latest/genindex.html">
+    <link rel="search" title="Búsqueda" href="https://gestionbasesdatos.readthedocs.io/es/latest/search.html">
+    <link rel="next" title="2.7. ACTIVIDADES RESUELTAS" href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/Actividades.html">
+    <link rel="prev" title="2. DISEÑO DE MODELOS LÓGICOS NORMALIZADOS" href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/index.html"> 
+  
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/Teoria.html">
+
+<link rel="stylesheet" href="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'Tema2/Teoria'
+READTHEDOCS_DATA['source_suffix'] = '.rst'
+</script>
+
+<script type="text/javascript" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/readthedocs-analytics.js"></script>
+
+<!-- end RTD <extrahead> -->
+</head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="https://gestionbasesdatos.readthedocs.io/es/latest/index.html">
+          <span>Gestión de Bases de Datos</span></a></h1>
+        <h2 class="heading"><span>2.1. INTRODUCCIÓN</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&nbsp;&nbsp;<a href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/index.html">2. DISEÑO DE MODELOS LÓGICOS NORMALIZADOS</a>
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+        <a class="uplink" href="https://gestionbasesdatos.readthedocs.io/es/latest/index.html">Contenidos</a>
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+        <a href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/Actividades.html">2.7. ACTIVIDADES RESUELTAS</a>&nbsp;&nbsp;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="introduccion">
+<h1>2.1. INTRODUCCIÓN<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>En este tema veremos como hacer el diseño conceptual y lógico de una 
+base de datos.
+Empezaremos elaborando el modelo conceptual usando diagramas 
+Entidad-Relación y Entidad-Relación extendidos. Este diseño es de más 
+alto nivel, más próximo al usuario y más alejado del diseño físico de la
+ BD.
+A continuación, a partir del modelo Entidad-Relación, procederemos a 
+generar el modelo relacional, el cual ya se halla muy próximo al modelo 
+físico de BD. Veremos las reglas de transformación que hemos de seguir 
+para ello.
+Por último deberemos normalizar las tablas obtenidas para evitar 
+redundancias.
+Resumiendo, los 2 modelos lógicos, de mayor a menor nivel de 
+abstracción, que veremos en este tema son:</p>
+<ul class="simple">
+<li><strong>Modelo Entidad-Relación (extendido)</strong></li>
+<li><strong>Modelo Relacional</strong></li>
+</ul>
+<p>En el siguiente tema, realizaremos el diseño físico de la BD a partir del modelo relacional.</p>
+</div>
+<div class="section" id="diseno-de-bd">
+<h1>2.2. DISEÑO DE BD<a class="headerlink" href="#diseno-de-bd" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El diseño de una base de datos consiste en extraer todos los datos 
+relevantes de un problema, por ejemplo, saber que datos están implicados
+ en el proceso de facturación de una empresa que vende artículos de 
+informática, o, que datos son necesarios para llevar el control de 
+pruebas diagnósticas en un centro de radiológico.
+Para extraer estos datos, se debe realizar un análisis en profundidad 
+del problema, para averiguar qué datos son esenciales para la base de 
+datos y descartar los que no sean necesarios. Una vez extraídos los 
+datos esenciales comenzamos a construir los modelos adecuados. Es decir,
+ construimos, mediante una herramienta de diseño de base de datos, un 
+esquema que exprese con total exactitud todos los datos que el problema 
+requiere almacenar. Ya dijimos en el tema anterior, que es algo 
+equivalente al dibujo de un plano previo a la construcción de un 
+edificio.
+También introdujimos en el tema 1, las distintas fases por las que 
+atraviesa el proceso de diseño de una Base de Datos. Además, previo al 
+diseño es necesario realizar una primera fase denominada de análisis.</p>
+<div class="section" id="fase-de-analisis-especificacion-de-requisitos-software-e-r-s">
+<h2>2.2.1. Fase de Análisis: Especificación de requisitos Software (E.R.S.)<a class="headerlink" href="#fase-de-analisis-especificacion-de-requisitos-software-e-r-s" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Antes de pasar a diseñar una BD hay que tener claro que es lo que 
+queremos hacer. Para ello, típicamente los informáticos se reúnen con 
+los futuros usuarios del sistema para recopilar la información que 
+necesitan para saber que desean dichos usuarios. Normalmente se hace una
+ reunión inicial a y partir de ella se elabora una batería de preguntas 
+para entrevistar a los usuarios finales en una segunda reunión y obtener
+ de ella una información detallada de lo que se espera de nuestra BD. De
+ estas entrevistas, se extrae el documento más importante del análisis, 
+el documento de Especificación de Requisitos Software o E.R.S.
+A partir de dicha E.R.S. Se extrae toda la información necesaria para la
+ modelización de datos.</p>
+</div>
+<div class="section" id="fase-1-del-diseno-diseno-conceptual-modelo-entidad-relacion-e-r">
+<h2>2.2.2. Fase 1 del diseño. Diseño Conceptual: Modelo Entidad/Relación (E/R)<a class="headerlink" href="#fase-1-del-diseno-diseno-conceptual-modelo-entidad-relacion-e-r" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Habitualmente quien realiza la modelización es un analista 
+informático que no tiene porqué ser un experto en el problema que 
+pretende resolver (Contabilidad, Gestión de Reservas hoteleras, 
+medicina, economía, etc.). Es por esto que es imprescindible contar con 
+la experiencia de un futuro usuario de la BD que conozca a fondo todos 
+los entresijos del negocio, y que, a su vez, no tienen porqué tener 
+ningún conocimiento de informática.
+El objetivo de esta fase del diseño consiste es representar la 
+información obtenida del usuario final y concretada en el E.R.S. 
+mediante estándares para que el resto de la comunidad informática pueda 
+entender y comprender el modelo realizado. El modelo que se utiliza en 
+esta primera fase del diseño tiene un gran poder expresivo para poder 
+comunicarse con el usuario que no es experto en informática y se 
+denomina Modelo Conceptual.
+El modelo conceptual que utilizaremos es el Modelo Entidad/Relación e 
+iremos profundizando en él a lo largo de esta unidad.</p>
+</div>
+<div class="section" id="fase-2-del-diseno-diseno-logico-modelo-relacional">
+<h2>2.2.3. Fase 2 del diseño. Diseño Lógico: Modelo Relacional<a class="headerlink" href="#fase-2-del-diseno-diseno-logico-modelo-relacional" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Este modelo es más técnico que el anterior porque está orientado al 
+personal informático y generalmente tiene traducción directa al al 
+modelo físico que entiende el SGBD.
+Se obtienen a partir del modelo conceptual y dependerá de la 
+implementación de la BD. Así, no es lo mismo implementar una base de 
+datos jerárquica u orientada a objetos que una BD relacional. El modelo 
+que se usará en este módulo es el Modelo Relacional.</p>
+</div>
+<div class="section" id="fase-3-del-diseno-diseno-fisico-modelo-fisico">
+<h2>2.2.4. Fase 3 del diseño. Diseño Físico: Modelo Físico<a class="headerlink" href="#fase-3-del-diseno-diseno-fisico-modelo-fisico" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Es el resultado de aplicar el modelo lógico a un SGBD concreto. 
+Generalmente está expresado en un lenguaje de programación de BBDD tipo 
+SQL. En este módulo, transformaremos el Modelo Relacional en el modelo 
+físico mediante el sublenguaje DDL de SQL. Esto se estudiará en el 
+próximo tema.</p>
+<img alt="../_images/tema2-001.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-001.png">
+</div>
+</div>
+<div class="section" id="modelo-entidad-relacion">
+<h1>2.3. MODELO ENTIDAD/RELACIÓN<a class="headerlink" href="#modelo-entidad-relacion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El modelo Entidad-Relación es el modelo más utilizado para el diseño 
+conceptual de bases de datos. Fue introducido por Peter Chen en 1976 y 
+se basa en la existencia de objetos a los que se les da el nombre de 
+entidades, y asociaciones entre ellos, llamadas relaciones. Sus símbolos
+ principales se representan en el cuadro siguiente.</p>
+<img alt="../_images/tema2-002.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-002.png">
+<p>A continuación se detallan los elementos fundamentes de este modelo.</p>
+<div class="section" id="entidades">
+<h2>2.3.1. Entidades<a class="headerlink" href="#entidades" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una entidad es cualquier objeto o elemento acerca del cual se pueda 
+almacenar información en la BD. Las entidades pueden ser concretas como 
+una persona o abstractas como una fecha. Las entidades se representan 
+gráficamente mediante rectángulos y su nombre aparece en el interior. Un
+ nombre de entidad sólo puede aparecer una vez en el esquema conceptual.</p>
+<p><strong>Tipos de entidades</strong></p>
+<p>Hay dos tipos de entidades: fuertes y débiles. Una entidad débil es 
+una entidad cuya existencia depende de la existencia de otra entidad. 
+Una entidad fuerte es una entidad que no es débil.</p>
+<img alt="../_images/tema2-003.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-003.png">
+<img alt="../_images/tema2-004.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-004.png">
+<img alt="../_images/tema2-005.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-005.png">
+</div>
+<div class="section" id="atributos">
+<h2>2.3.2. Atributos<a class="headerlink" href="#atributos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una entidad se caracteriza y distingue de otra por los atributos, en 
+ocasiones llamadas propiedades o campos, que representan las 
+características de una entidad. Los atributos de una entidad pueden 
+tomar un conjunto de valores permitidos al que se le conoce como dominio
+ del atributo. Dando valores a estos atributos, se obtienen las 
+diferentes ocurrencias de una entidad.</p>
+<p>En esencia, existen dos tipos de atributos:
+- Identificadores de entidad (también llamados clave primaria o clave 
+principal): son atributos que identifican de manera unívoca cada 
+ocurrencia de una entidad.
+- Descriptores de entidad: son atributos que muestran unas 
+características de la entidad.</p>
+<p>Siempre debe existir, al menos, un atributo identificativo.</p>
+<p>Ejemplos de atributos:</p>
+<img alt="../_images/tema2-006.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-006.png">
+<img alt="../_images/tema2-007.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-007.png">
+<div class="section" id="tipos-de-atributos">
+<h3>2.3.2.1. Tipos de atributos<a class="headerlink" href="#tipos-de-atributos" title="Enlazar permanentemente con este título">¶</a></h3>
+<img alt="../_images/tema2-008.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-008.png">
+<ul class="simple">
+<li><strong>Atributos identificadores o identificativos</strong>: Son 
+atributos cuyos valores no se repiten dentro de una misma entidad o 
+relación. Sirven para identificar de forma unívoca cada ocurrencia. 
+Actúan como clave principal o primaria. Por ejemplo CCC (Código Cuenta 
+Corriente) que identifica cada cuenta bancaria. O ISBN (International 
+Standard Book Number) que identifica cada libro que se publica. Un 
+atributo identificativo puede ser un atributo compuesto. Por ejemplo CCC
+ podría descomponerse en 3 atributos: num_banco, num_sucursal y 
+num_cuenta.</li>
+<li><strong>Atributos discriminadores o discriminantes</strong>: Son 
+atributos que discriminan distintas ocurrencias de una entidad débil en 
+identificación dentro de la entidad fuerte de la que dependen. Lo 
+representaremos con un círculo relleno de un color distinto a los 
+atributos identificadores y descriptivos. Por ejemplo num_transacción 
+dentro de una CCC o num_ejemplar dentro de un ISBN.</li>
+<li><strong>Atributos descriptores o descriptivos</strong>: Son los 
+atributos que describen diversas propiedades de una entidad o relación 
+(¡la relaciones también pueden tener atributos!). Son los más 
+frecuentes.</li>
+<li><strong>Atributos derivados</strong>: Son atributos cuyos valores se
+ calculan a partir de los valores de otros atributos. Por ejemplo 
+podemos disponer de un atributo fecha_nac que sería un atributo 
+descriptivo normal y calcular el valor del atributo edad a partir de él.
+ El precio_total también podría calcularse a partir del precio + %iva.</li>
+<li><strong>Atributos multivaluados</strong>: Son atributos descriptores
+ que poseen varios valores de un mismo dominio. Por ejemplo, si 
+necesitamos almacenar varios e-mail de una misma persona entonces 
+deberemos utilizar un atributo multivaluado. Igual sucede con el 
+teléfono. Si sólo necesitamos almacenar un sólo valor utilizaremos un 
+atributo descriptivo normal.</li>
+<li><strong>Atributos compuestos</strong>: Muchas veces se confunden con
+ los anteriores, aunque no tienen nada que ver con ellos. Un atributo 
+compuesto es un atributo que puede ser descompuesto en otros atributos 
+pertenecientes a distintos dominios.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="relaciones">
+<h2>2.3.3. Relaciones<a class="headerlink" href="#relaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una relación es la asociación que existe entre dos a más entidades. 
+Cada relación tiene un nombre que describe su función. Las relaciones se
+ representan gráficamente mediante rombos y su nombre aparece en el 
+interior. Normalmente le pondremos de nombre la primera o primeras 
+letras de las entidades que relaciona.
+Las entidades que están involucradas en una determinada relación se 
+denominan entidades participantes.
+El número de participantes en una relación es lo que se denomina grado 
+de la relación. Por ejemplo la relación CLIENTE-COCHE es de grado 2 o 
+binaria, ya que intervienen dos entidades.</p>
+<img alt="../_images/tema2-010.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-010.png">
+<p>Observa que el nombre que ponemos a la relación usa las primeras 
+letras de cada entidad. En este caso como ambas empiezan por «C» se 
+añade algunas letras más para hacer referencia a CLIENTES. También 
+podríamos haber puesto como nombre de la relación uno más descriptivo de
+ la misma, por ejemplo «Compra» (CLIENTE compra COCHE), pero esta 
+nomenclatura puede conducir a confusión a la hora de determinar la 
+cardinalidad de la relación cuando estamos aprendiendo.
+La relación PUBLICAR, es de grado 3, ya que involucra las entidades 
+LIBRO, EDITORIAL y AUTOR.</p>
+<img alt="../_images/tema2-009.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-009.png">
+<p>Cuando una entidad está relacionada consigo misma, hablamos de relación reflexiva.</p>
+<img alt="../_images/tema2-011.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-011.png">
+<p>Aunque el modelo E-R permite relaciones de cualquier grado, la 
+mayoría de las aplicaciones del modelo sólo consideran relaciones del 
+grado 2.</p>
+<div class="section" id="el-papel-o-rol-de-una-entidad-en-una-relacion">
+<h3>2.3.3.1. El Papel o Rol de una entidad en una relación<a class="headerlink" href="#el-papel-o-rol-de-una-entidad-en-una-relacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Es la función que tiene en una relación. Se especifican los papeles o
+ roles cuando se quiera aclarar el significado de una entidad en una 
+relación. A continuación mostramos los mismos ejemplos del punto 
+anterior pero incluyendo el papel o rol de cada entidad en las 
+relaciones:</p>
+<img alt="../_images/tema2-012.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-012.png">
+</div>
+<div class="section" id="la-cardinalidad-de-una-relacion">
+<h3>2.3.3.2. La Cardinalidad de una relación<a class="headerlink" href="#la-cardinalidad-de-una-relacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Cuando la relación es binaria, cosa que ocurre en la mayoría de los 
+casos, la cardinalidad es el número de ocurrencias de una entidad 
+asociadas a una ocurrencia de la otra entidad.
+Existen principalmente tres tipos de cardinalidades binarias:</p>
+<dl class="docutils">
+<dt><strong>Relación uno a uno 1:1</strong></dt>
+<dd>A cada elemento de la primera entidad le corresponde no más de un 
+elemento de la segunda entidad, y a la inversa.Es representado 
+gráficamente de la siguiente manera:</dd>
+</dl>
+<img alt="../_images/tema2-013.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-013.png">
+<p>Ejemplo cardinalidad 1:1</p>
+<img alt="../_images/tema2-015.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-015.png">
+<dl class="docutils">
+<dt><strong>Relación uno a muchos 1:N</strong></dt>
+<dd>Significa que cada elemento de una entidad del tipo A puede 
+relacionarse con cualquier cantidad de elementos de una entidad del tipo
+ B, y un elemento de una entidad del tipo B solo puede estar relacionado
+ con un elemento de una entidad del tipo A. Su representación gráfica es
+ la siguiente:
+Nótese en este caso que el extremo punteado de la flecha de la relación 
+de A y B, indica un elemento de A conectado a muchos de B.</dd>
+</dl>
+<img alt="../_images/tema2-014.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-014.png">
+<p>Ejemplo cardinalidad 1:N</p>
+<img alt="../_images/tema2-016.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-016.png">
+<dl class="docutils">
+<dt><strong>Muchos a muchos N:M</strong></dt>
+<dd>Establece que cualquier cantidad de elementos de una entidad del 
+tipo A pueden estar relacionados con cualquier cantidad de elementos de 
+una entidad del tipo B.
+El extremo de la flecha que se encuentra punteada indica el «varios» de 
+la relación.</dd>
+</dl>
+<img alt="../_images/tema2-017.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-017.png">
+<p>Ejemplo cardinalidad N:M</p>
+<img alt="../_images/tema2-018.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-018.png">
+</div>
+<div class="section" id="la-participacion-de-una-entidad">
+<h3>2.3.3.3. La Participación de una entidad<a class="headerlink" href="#la-participacion-de-una-entidad" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>La participación de una entidad también se conoce como cardinalidad 
+de la entidad dentro de una relación. Una misma entidad puede tener 
+distinta cardinalidad dentro de distintas relaciones.
+Para obtener la participación, se debe fijar una ocurrencia concreta de 
+una entidad y averiguar cuántas ocurrencias de la otra entidad le 
+corresponden como mínimo y como máximo. Después realizar lo mismo en el 
+otro sentido.
+Estas ocurrencias mínimas y máximas (llamadas también participación de 
+una entidad) se representarán entre paréntesis y con letras minúsculas 
+en el lado de la relación opuesto a la entidad cuyas ocurrencias se 
+fijan.
+Para determinar la cardinalidad nos quedamos con las participaciones 
+máximas de ambas y se representan con letras mayúsculas separadas por 
+dos puntos junto al símbolo de la relación. Veamos algunos ejemplos:</p>
+<p>Ejemplo 1</p>
+<img alt="../_images/tema2-019.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-019.png">
+<p>Un conductor «conduce» como mínimo 1 coche y como máximo 1 coche → 
+Participación (1,1) y se pone en el lado opuesto a CONDUCTOR, es decir, 
+junto a COCHE.
+Un coche «es conducido» como mínimo por 1 conductor y como máximo por 1 
+conductor → Participación (1,1) y se pone en el lado opuesto a COCHE, es
+ decir, junto a CONDUCTOR.
+Para determinar la cardinalidad nos quedamos con las dos participaciones
+ máximas. Es decir → 1:1.</p>
+<p>Ejemplo 2</p>
+<img alt="../_images/tema2-020.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-020.png">
+<p>Un cliente «compra» como mínimo 1 coche y como máximo puede comprar 
+más de un coche, es decir, varios coches. Ese varios se representa con 
+la letra «n» → Participación (1,n)) y se pone en el lado opuesto a 
+CLIENTE, es decir, junto a COCHE.
+Un coche «es comprado» como mínimo por 1 cliente y como máximo por 1 
+cliente → Participación (1,1) y se pone en el lado opuesto a COCHE, es 
+decir, junto a CLIENTE.
+Para determinar la cardinalidad nos quedamos con las dos participaciones
+ máximas y la «n» se pone en mayúsculas «N». Es decir → 1:N.</p>
+<p>Ejemplo 3</p>
+<img alt="../_images/tema2-021.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-021.png">
+<p>Un empleado «trabaja» como mínimo 1 departamento y como máximo puede 
+trabajar en varios. Ese varios se representa con la letra «n» → 
+Participación(1,n)) y se pone en el lado opuesto a EMPLEADO, es decir, 
+junto a DEPARTAMENTO.
+Un departamento «tiene» como mínimo por 1 empleado y como máximo puede 
+tener varios → Participación (1,n) y se pone en el lado opuesto a 
+DEPARTAMENTO, es decir, junto a EMPLEADO.
+Para determinar la cardinalidad nos quedamos con las dos participaciones
+ máximas y la «n» se pone en mayúsculas «N» y para diferenciar el otro 
+«varios» en lugar de «N» ponemos «M» (Igual que cuando en matemáticas 
+había dos variables no se ponía x e x sino x e y). Es decir → N:M.</p>
+</div>
+<div class="section" id="atributos-propios-de-una-relacion">
+<h3>2.3.3.4. Atributos propios de una relación<a class="headerlink" href="#atributos-propios-de-una-relacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las relaciones también pueden tener atributos, se les denominan 
+atributos propios. Son aquellos atributos cuyo valor sólo se puede 
+obtener en la relación, puesto que dependen de todas las entidades que 
+participan en la relación. Veamos un ejemplo.</p>
+<p>Ejemplo:</p>
+<img alt="../_images/tema2-022.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-022.png">
+<p>Tenemos la relación «Compra» entre cliente y producto. Así un cliente
+ puede comprar uno o varios productos, y un producto puede ser comprado 
+por uno o varios clientes. Encontramos una serie de atributos propios de
+ cada una de las entidades [CLIENTE (Cod_Cliente, Nombre, Dirección, 
+edad, teléfono) y PRODUCTO (Cod_Producto, Nombre, Descripción, 
+Precio_Unidad)], pero también podemos observar como el atributo 
+«Cantidad» es un atributo de la relación. ¿Por qué? Pues porque un mismo
+ cliente puede comprar distintas cantidades de distintos productos y un 
+mismo producto puede ser comprado en distintas cantidades por distintos 
+clientes. Es decir el atributo cantidad depende del cliente y del 
+producto de que se traten.</p>
+</div>
+<div class="section" id="relaciones-de-dependencia-entidades-fuertes-y-entidades-debiles">
+<h3>2.3.3.5. Relaciones de dependencia: Entidades Fuertes y Entidades Débiles<a class="headerlink" href="#relaciones-de-dependencia-entidades-fuertes-y-entidades-debiles" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Al definir las entidades hablamos de dos tipos de ellas: fuertes y 
+débiles. Una entidad débil está unida a una entidad fuerte a través de 
+una relación de dependencia.
+Hay dos tipos de relaciones de dependencia:</p>
+<p><strong>Dependencia en existencia</strong>
+Se produce cuando una entidad débil necesita de la presencia de una 
+fuerte para existir. Si desaparece la existencia de la entidad fuerte, 
+la de la débil carece de sentido. Se representa con una barra 
+atravesando el rombo y la letra E en su interior. Son relaciones poco 
+frecuentes.</p>
+<p>Ejemplo:</p>
+<img alt="../_images/tema2-023.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-023.png">
+<p>En la figura se muestra el caso de que un empleado puede tener 
+ninguno, uno o varios hijos, por lo que los datos de los hijos deben 
+sacarse en una entidad aparte, aunque siguen siendo datos propios de un 
+empleado. Si se eliminase un registro de un empleado, no tendría sentido
+ seguir manteniendo en la base datos la información sobre sus hijos.</p>
+<p><strong>Dependencia en identificación</strong>
+Se produce cuando una entidad débil necesita de la fuerte para 
+identificarse. Por sí sola la débil no es capaz de identificar de manera
+ unívoca sus ocurrencias. La clave de la entidad débil se forma al unir 
+la clave de la entidad fuerte con los atributos identificadores de la 
+entidad débil.</p>
+<p>Ejemplo:</p>
+<img alt="../_images/tema2-024.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-024.png">
+<p>En la figura se observa que la provincia tiene uno o varios municipio
+ y que un municipio pertenece a una sola provincia. Ahora bien si lo que
+ identifica a los municipios es el código que aparece en el código 
+postal, se tiene que las dos primeras cifras corresponden al código de 
+la provincia y las tres últimas al del municipio. Por ejemplo, el C.P de
+ Écija es 41400, dónde 41 es el código de la provincia y 400 el del 
+municipio. De esta forma, habrá distintos municipios con código 400 en 
+distintas provincias. Uno de estos municipios se distinguirá del resto 
+al anteponerle las dos primeras cifras correspondientes al código de la 
+provincial.</p>
+</div>
+<div class="section" id="simbolos-de-exclusividad-o-inclusividad-entre-relaciones">
+<h3>2.3.3.6. Símbolos de exclusividad o inclusividad entre relaciones<a class="headerlink" href="#simbolos-de-exclusividad-o-inclusividad-entre-relaciones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Otros símbolos usados en el modelo E/R son los siguientes:</p>
+<p><strong>Restricción de exclusividad</strong> entre dos tipos de 
+relaciones R1 y R2 respecto a la entidad E1. Significa que E1 está 
+relacionada, o bien con E2 o bien con E3, pero  no pueden darse ambas 
+relaciones simultáneamente.</p>
+<img alt="../_images/tema2-025.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-025.png">
+<p>Ejemplo: Un empleado puede estar en una empresa, o bien realizando 
+prácticas, en cuyo caso está asignado a un grupo de prácticas y no 
+pertenece a ningún departamento en concreto. O bien puede ser empleado 
+en plantilla y en este caso pertenece a un departamento.</p>
+<img alt="../_images/tema2-031.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-031.png">
+<p><strong>Restricción de inclusividad</strong> entre dos tipos de 
+relaciones R1 y R2 respecto a la entidad E1. Para que la entidad E1 
+participe en la relación R2 debe participar previamente en la relación 
+R1.</p>
+<img alt="../_images/tema2-027.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-027.png">
+<p>Ejemplo: Para  que un empleado pueda trabajar como diseñador de productos debe   haber asistido, al menos, a dos cursos.</p>
+<img alt="../_images/tema2-029.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-029.png">
+<p><strong>Restricción de exclusión</strong> entre dos tipos de 
+relaciones R1 y R2. Significa que E1 está relacionada con E2 bien 
+mediante R1, o bien mediante R2 pero que no pueden darse ambas 
+relaciones simultáneamente.</p>
+<img alt="../_images/tema2-033.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-033.png">
+<p>Ejemplo: Los empleados, en función de sus capacidades, o son 
+diseñadores de productos o son operarios y los fabrican, no es posible 
+que ningún empleado sea diseñador y fabricante a la misma vez.</p>
+<img alt="../_images/tema2-035.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-035.png">
+<p><strong>Restricción de inclusión</strong> entre dos tipos de 
+relaciones R1 y R2. Para que la entidad E1 participe en la relación R2 
+con E2 debe participar previamente en la relación R1.</p>
+<img alt="../_images/tema2-037.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-037.png">
+<p>Ejemplo: Para que un hombre se divorcie de una mujer, previamente ha de haberse casado con ella.</p>
+<img alt="../_images/tema2-039.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-039.png">
+</div>
+</div>
+</div>
+<div class="section" id="modelo-e-r-extendido">
+<h1>2.4. MODELO E/R EXTENDIDO<a class="headerlink" href="#modelo-e-r-extendido" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El modelo Entidad/Relación extendido incluye todo lo visto en el modelo Entidad/Relación pero además las <strong>Relaciones de Jerarquía</strong>.
+ Una relación de jerarquía se produce cuando una entidad se puede 
+relacionar con otras a través de una relación cuyo rol sería «Es un tipo
+ de».</p>
+<p>Por ejemplo, imaginemos la siguiente situación.</p>
+<p>Queremos hacer una BD sobre los animales de un Zoo. Tenemos las 
+entidades ANIMAL, FELINO, AVE, REPTIL, INSECTO.
+FELINO, AVE, REPTIL e INSECTO tendrían el mismo tipo de relación con 
+ANIMAL: «son un tipo de». Ahora bien, su representación mediante el E/R 
+clásico sería bastante engorrosa:</p>
+<img alt="../_images/tema2-041.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-041.png">
+<p>Para evitar tener que repetir tantas veces el rombo de la misma 
+relación, se utilizan unos símbolos especiales para estos casos y se 
+sustituyen todos los rombos de relación «es un tipo de» por un triángulo
+ invertido, donde la entidades de abajo son siempre un tipo de la 
+entidad de arriba y se llaman subtipo e entidades hijas. La de arriba se
+ denominará supertipo o entidad padre. Las relaciones jerárquicas 
+siempre se hacen en función de un atributo que se coloca al lado de la 
+relación «es_un». En la figura siguiente sería «tipo».
+El ejemplo anterior quedaría del modo siguiente utilizando símbolos del 
+E/R extendido.</p>
+<img alt="../_images/tema2-042.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-042.png">
+<div class="section" id="relaciones-de-jerarquia">
+<h2>2.4.1. Relaciones de Jerarquía<a class="headerlink" href="#relaciones-de-jerarquia" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Vamos a ver los distintos tipos de relaciones de jerarquía existentes:</p>
+<ul class="simple">
+<li><strong>Total</strong>: Subdividimos la entidad Empleado en: 
+Ingeniero, Secretario y Técnico y en nuestra BD no hay ningún otro 
+empleado que no pertenezca a uno de estos tres tipos.</li>
+<li><strong>Parcial</strong>: Subdividimos la entidad Empleado en: 
+Ingeniero, Secretario y Técnico pero en nuestra BD puede haber empleados
+ que no pertenezcan a ninguno de estos tres tipos.</li>
+<li><strong>Solapada</strong>: Subdividimos la entidad Empleado, en: 
+Ingeniero, Secretario y Técnico y en nuestra BD puede haber empleados 
+que sean a la vez Ingenieros y secretarios, o secretarios y técnicos, 
+etc.</li>
+<li><strong>Exclusiva</strong>: Subdividimos la entidad Empleado en: 
+Ingeniero, Secretario y Técnico. En nuestra BD ningún empleado pertenece
+ a más de una subentidad.</li>
+</ul>
+<img alt="../_images/tema2-043.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-043.png">
+<p>Ejemplos:</p>
+<div class="section" id="jerarquia-solapada-y-parcial">
+<h3>2.4.1.1. Jerarquía solapada y parcial<a class="headerlink" href="#jerarquia-solapada-y-parcial" title="Enlazar permanentemente con este título">¶</a></h3>
+<img alt="../_images/tema2-044.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-044.png">
+<p>En esta BD un empleado podría ser simultáneamente técnico, científico
+ y astronauta o técnico y astronauta, etc. (solapada). Además puede ser 
+técnico, astronauta, científico o desempeñar otro empleo diferente 
+(parcial).</p>
+</div>
+<div class="section" id="jerarquia-solapada-y-total">
+<h3>2.4.1.2. Jerarquía solapada y total<a class="headerlink" href="#jerarquia-solapada-y-total" title="Enlazar permanentemente con este título">¶</a></h3>
+<img alt="../_images/tema2-045.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-045.png">
+<p>En esta BD un empleado podría ser simultáneamente técnico, científico
+ y astronauta o técnico y astronauta, etc. (solapada). Además puede ser 
+solamente técnico, astronauta o científico (total).</p>
+</div>
+<div class="section" id="jerarquia-exclusiva-y-parcial">
+<h3>2.4.1.3. Jerarquía exclusiva y parcial<a class="headerlink" href="#jerarquia-exclusiva-y-parcial" title="Enlazar permanentemente con este título">¶</a></h3>
+<img alt="../_images/tema2-046.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-046.png">
+<p>En esta BD un empleado sólo puede desempeñar una de las tres 
+ocupaciones (exclusiva) . Además puede ser técnico, o ser astronauta, o 
+ser científico o también desempeñar otro empleo diferente, por ejemplo, 
+podría ser FÍSICO (parcial).</p>
+</div>
+<div class="section" id="jerarquia-exclusiva-y-total">
+<h3>2.4.1.4. Jerarquía exclusiva y total<a class="headerlink" href="#jerarquia-exclusiva-y-total" title="Enlazar permanentemente con este título">¶</a></h3>
+<img alt="../_images/tema2-047.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-047.png">
+<p>Un empleado puede ser solamente técnico, astronauta o científico (total) y no ocupar más de un puesto (exclusiva)</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Podéis observar que en los ejemplos hemos omitido las participaciones. La mayoría de las veces estas no se ponen.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="modelo-relacional">
+<h1>2.5. MODELO RELACIONAL<a class="headerlink" href="#modelo-relacional" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="id1">
+<h2>2.5.1. Introducción<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los SGBD se pueden clasificar de acuerdo con el modelo lógico que 
+soportan, el número de usuarios, el número de puestos, el coste… La 
+clasificación más importante de los SGBD se basa en el modelo lógico, 
+siendo los principales modelos que se utilizan en el mercado los 
+siguientes: Jerárquico, en Red, Relacional y Orientado a Objetos.</p>
+<p>La mayoría de los SGBD comerciales actuales están basados en el 
+modelo relacional, en el que nos vamos a centrar, mientras que los 
+sistemas más antiguos estaban basados en el modelo de red o el modelo 
+jerárquico.</p>
+<p>Los motivos del éxito del modelo relacional son fundamentalmente dos:
+- Se basan en el álgebra relacional que es un modelo matemático con 
+sólidos fundamentos. En esta sección se presenta el modelo relacional. 
+Realizaremos la descripción de los principios básicos del modelo 
+relacional: la estructura de datos relacional y las reglas de 
+integridad.
+Ofrecen sistemas simples y eficaces para representar y manipular los 
+datos.
+- La estructura fundamental del modelo relacional es precisamente esa, 
+la «<strong>relación</strong>», es decir una tabla bidimensional constituida por <strong>filas</strong> (registros o tuplas) y <strong>columnas</strong>
+ (atributos o campos). Las relaciones o tablas representan las entidades
+ del modelo E/R, mientras que los atributos de la relación representarán
+ las propiedades o atributos de dichas entidades. Por ejemplo, si en la 
+base de datos se tienen que representar la entidad PERSONA, está pasará a
+ ser una relación o tabla llamada «PERSONAS», cuyos atributos describen 
+las características de las personas (tabla siguiente). Cada tupla o 
+registro de la relación «PERSONAS» representará una persona concreta.</p>
+</div>
+<div class="section" id="estructura-de-datos-relacional">
+<h2>2.5.2. Estructura de datos relacional<a class="headerlink" href="#estructura-de-datos-relacional" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="wy-table-responsive"><table class="docutils" id="id3" border="1">
+<caption><span class="caption-text">PERSONAS</span><a class="headerlink" href="#id3" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="17%">
+<col width="17%">
+<col width="17%">
+<col width="17%">
+<col width="17%">
+<col width="17%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">D.N.I.</th>
+<th class="head">Nombre</th>
+<th class="head">Apellido</th>
+<th class="head">Nacimiento</th>
+<th class="head">Sexo</th>
+<th class="head">Estado civil</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>52.768.987</td>
+<td>Juan</td>
+<td>Loza</td>
+<td>15/06/1976</td>
+<td>H</td>
+<td>Soltero</td>
+</tr>
+<tr class="row-odd"><td>06.876.983</td>
+<td>Isabel</td>
+<td>Gálvez</td>
+<td>23/12/1969</td>
+<td>M</td>
+<td>Casada</td>
+</tr>
+<tr class="row-even"><td>34.678.987</td>
+<td>Micaela</td>
+<td>Ruiz</td>
+<td>02/10/1985</td>
+<td>M</td>
+<td>Soltera</td>
+</tr>
+</tbody>
+</table></div>
+<p>En realidad, siendo rigurosos, una RELACIÓN del MODELO RELACIONAL es 
+sólo la definición de la estructura de la tabla, es decir su nombre y la
+ lista de los atributos que la componen. Una representación de la 
+definición de esa relación podría ser la siguiente:</p>
+<img alt="../_images/tema2-048.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-048.png">
+<p>Para distinguir un registro de otro, se usa la «<strong>clave primaria o clave principal</strong>».</p>
+<p>En una relación puede haber más combinaciones de atributos que 
+permitan identificar unívocamente una fila (estos se llamarán «llaves o 
+claves candidatas»), pero entre éstas se elegirá una sola para utilizar 
+como llave primaria. Los atributos de la llave primaria no pueden asumir
+ el valor nulo.</p>
+</div>
+<div class="section" id="elementos-y-propiedades-del-modelo-relacional">
+<h2>2.5.3. Elementos y propiedades del modelo relacional<a class="headerlink" href="#elementos-y-propiedades-del-modelo-relacional" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li><strong>Relación (tabla)</strong>: Representan las entidades de las que se quiere almacenar información en la BD. Esta formada por:<ul>
+<li><strong>Filas (Registros o Tuplas)</strong>: Corresponden a cada ocurrencia de la entidad.</li>
+<li><strong>Columnas (Atributos o campos)</strong>: Corresponden a las 
+propiedades de la entidad. Siendo rigurosos una relación está 
+constituida sólo por los atributos, sin las tuplas.</li>
+</ul>
+</li>
+<li>Las relaciones tienen las siguientes <strong>propiedades</strong>:<ul>
+<li>Cada relación tiene un nombre y éste es distinto del nombre de todas las demás relaciones de la misma BD.</li>
+<li>No hay dos atributos que se llamen igual en la misma relación.</li>
+<li>El orden de los atributos no importa: los atributos no están ordenados.</li>
+<li>Cada tupla es distinta de las demás: no hay tuplas duplicadas. (Como mínimo se diferenciarán en la clave principal)</li>
+<li>El orden de las tuplas no importa: las tuplas no están ordenadas.</li>
+</ul>
+</li>
+<li><strong>Clave candidata</strong>: atributo que identifica unívocamente una tupla. Cualquiera de las claves candidatas se podría elegir como clave principal.</li>
+<li><strong>Clave Principal</strong>: Clave candidata que elegimos como identificador de la tuplas.</li>
+<li><strong>Clave Alternativa</strong>: Toda clave candidata que no es clave primaria (las que no hayamos elegido como clave principal)</li>
+<li>Una clave principal no puede asumir el valor nulo (<strong>Integridad de la entidad</strong>).</li>
+<li><strong>Dominio de un atributo</strong>: Conjunto de valores que pueden ser asumidos por dicho atributo.</li>
+<li><strong>Clave Externa o foránea o ajena</strong>: el atributo o 
+conjunto de atributos que forman la clave principal de otra relación. 
+Que un atributo sea clave ajena en una tabla significa que para 
+introducir datos en ese atributo, previamente han debido introducirse en
+ la tabla de origen. Es decir, los valores presentes en la clave externa
+ tienen que corresponder a valores presentes en la clave principal 
+correspondiente (<strong>Integridad Referencial</strong>).</li>
+</ul>
+</div>
+<div class="section" id="transformacion-de-un-esquema-e-r-a-esquema-relacional">
+<h2>2.5.4. Transformación de un esquema E/R a esquema relacional<a class="headerlink" href="#transformacion-de-un-esquema-e-r-a-esquema-relacional" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Pasamos ya a enumerar las normas para traducir del Modelo E/R al modelo relacional, ayudándonos del siguiente ejemplo:</p>
+<img alt="../_images/tema2-049.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-049.png">
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Al pasar del esquema E/R al esquema Relacional deberemos añadir las <strong>claves foráneas</strong>
+ necesarias para establecer las interrelaciones entre las tablas. Dichas
+ claves foráneas no aparecen representadas en el esquema E/R.</p>
+</div>
+<div class="admonition important">
+<p class="first admonition-title">Importante</p>
+<p class="last">Se deben elaborar los diagramas relacionales de tal forma que, posteriormente al introducir datos, <strong>no quede ninguna clave foránea a valor nulo (NULL)</strong>. Para ello se siguen las reglas que se muestran a continuación.</p>
+</div>
+<div class="section" id="id2">
+<h3>2.5.4.1. Entidades<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Cada entidad se transforma en una tabla. El identificador (o 
+identificadores) de la entidad pasa a ser la clave principal de la 
+relación y aparece subrayada o con la indicación: <strong>PK (Primary Key)</strong>. Si hay clave alternativa esta se pone en «negrita».</p>
+<p>Ejemplo: Todas las entidades del ejemplo anterior generan tabla. En concreto, la entidad AULA genera la siguiente tabla:</p>
+<img alt="../_images/tema2-050.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-050.png">
+</div>
+<div class="section" id="relaciones-binarias-de-grado-2">
+<h3>2.5.4.2. Relaciones binarias (de grado 2)<a class="headerlink" href="#relaciones-binarias-de-grado-2" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>Relaciones N:M</strong>:  Es el caso más sencillo. <strong>Siempre generan tabla</strong>. Se crea una tabla que incorpora como claves ajenas o foráneas <strong>FK (Foreign Key)</strong>
+ cada una de las claves de las entidades que participan en la relación. 
+La clave principal de esta nueva tabla está compuesta por dichos campos.
+ Es importante resaltar que no se trata de 2 claves primarias, sino de 
+una clave primaria compuesta por 2 campos.
+Si hay atributos propios, pasan a la tabla de la relación. Se haría 
+exactamente igual si hubiera participaciones mínimas 0.
+Orden de los atributos en las claves compuestas: Se deben poner a la 
+izquierda todos los atributos que forman la clave. El orden de los 
+atributos que forman la clave vendrá determinado por las consultas que 
+se vayan a realizar. Las tuplas de la tabla suelen estar ordenadas 
+siguiendo como índice la clave. Por tanto, conviene poner primero 
+aquel/los atributos por los que se va a realizar la consulta.</p>
+<p>Ejemplo: Realicemos el paso a tablas de la relación N:M entre MÓDULO 
+(1,n) y ALUMNO (1,n). Este tipo de relación siempre genera tabla y los 
+atributos de la relación, pasan a la tabla que ésta genera.</p>
+<img alt="../_images/tema2-051.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-051.png">
+<p><strong>Relaciones 1:N</strong>: Por lo general no generan tabla. Se dan 2 casos:</p>
+<ul class="simple">
+<li>Caso 1: Si la entidad  del lado «1» presenta participación (0,1), 
+entonces se crea una nueva tabla para la relación que incorpora como 
+claves ajenas las claves de ambas entidades. La clave principal de la 
+relación será sólo la clave de la entidad del lado «N».</li>
+<li>Caso 2: Para el resto de situaciones, la entidad del lado «N» recibe
+ como clave ajena la clave de la entidad del lado «1». Los atributos 
+propios de la relación pasan a la tabla donde se ha incorporado la clave
+ ajena.</li>
+</ul>
+<p>Ejemplo de caso 1: Realicemos el paso a tablas de la relación 1:N 
+entre PROFESOR (1,n) y EMPRESA (0,1). Como en el lado «1» encontramos 
+participación mínima 0, se generará una nueva tabla.</p>
+<img alt="../_images/tema2-052.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-052.png">
+<p>Ejemplo de caso 2: Realicemos el paso a tablas de la relación 1:N 
+entre MÓDULO (1,1) y TEMA (1,n). Como no hay participación mínima «0» en
+ el lado 1, no genera tabla y la clave principal del lado «1» pasa como 
+foránea al lado «n».</p>
+<img alt="../_images/tema2-053.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-053.png">
+<p><strong>Relaciones 1:1</strong>: Por lo general no generan tabla.  Se dan 3 casos:</p>
+<ul class="simple">
+<li>Caso 1:  Si las dos entidades participan con participación (0,1), entonces se crea una nueva tabla para la relación.</li>
+<li>Caso 2:  Si alguna entidad, pero no las dos, participa con 
+participación mínima 0 (0,1), entonces se pone la clave ajena en dicha 
+entidad, para evitar en lo posible, los valores nulos.</li>
+<li>Caso 3: Si tenemos una relación 1:1 y ninguna tiene participación 
+mínima 0,  elegimos la clave principal de una de ellas y la introducimos
+ como clave clave ajena en la otra tabla. Se elegirá una u otra forma en
+ función de como se quiera organizar la información para facilitar las 
+consultas. Los atributos propios de la relación pasan a la tabla donde 
+se introduce la clave ajena.</li>
+</ul>
+<p>Ejemplo de caso 1: No se presenta ninguna situación así en el esquema
+ estudiado.     Una situación donde puede darse este caso es en HOMBRE 
+(0,1) se casa con MUJER (0,1).  Es similar al caso 1 del apartado 
+anterior en relaciones 1:N, aunque en este caso debemos establecer una 
+restricción de valor único para FK2.</p>
+<img alt="../_images/tema2-055.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-055.png">
+<p>Ejemplo de caso 2 (y 3): Realicemos el paso a tablas de la relación 
+1:1 entre ALUMNO (1,1) y BECA (0,1). Como BECA tiene participación 
+mínima 0, incorporamos en ella, como clave foránea, la clave de ALUMNO. 
+Esta forma de proceder también es válida para el caso 3, pudiendo acoger
+ la clave foránea cualquiera de las entidades.</p>
+<img alt="../_images/tema2-056.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-056.png">
+<hr class="docutils">
+<div class="admonition tip">
+<p class="first admonition-title">Truco</p>
+<p>A continuación se muestra un resumen de los casos disponibles en relaciones N:M, 1:N y 1:1.</p>
+<img alt="../_images/Esquema-Paso-ER-a-Relacional_(simplificado).png" class="last" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/Esquema-Paso-ER-a-Relacional_simplificado.png">
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="relaciones-de-dependencia-siempre-de-grado-2-y-cardinalidad-1-n">
+<h3>2.5.4.3. Relaciones de dependencia (Siempre de grado 2 y cardinalidad 1:N)<a class="headerlink" href="#relaciones-de-dependencia-siempre-de-grado-2-y-cardinalidad-1-n" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>Relaciones de dependencia en existencia</strong>: Se 
+comportan como una 1:N normal. La clave principal del lado 1 pasa al 
+lado «N» como foránea (hacia adonde apunta la flecha)
+Ejemplo: No encontramos ningún ejemplo, reseñado como tal, en el 
+supuesto anterior. Ahora bien, se comportan en el paso a tablas como 
+cualquier otra relación 1:N. Sólo se tendría en cuenta, el hecho de ser 
+débil en existencia para en el momento de creación de la BD, imponer que
+ al borrar una ocurrencia en el lado «1», se borren las asociadas en el 
+lado «n».</p>
+<p><strong>Relaciones de dependencia en identificación</strong>: Por lo 
+general no generan tablas, porque suelen ser 1:1 o 1:N. Como en toda 
+relación 1:N, La clave de la entidad fuerte debe introducirse en la 
+tabla de la entidad débil como foránea y, además en este caso, formar 
+parte de la clave de ésta. En las entidades débiles, la clave de la 
+entidad fuerte debe ir la primera y, a continuación, los discriminadores
+ de la débil.
+Ejemplo: Realicemos el paso a tablas de la relación débil en 
+identificación entre CURSO Y GRUPO.</p>
+<img alt="../_images/tema2-058.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-058.png">
+</div>
+<div class="section" id="relaciones-de-grado-mayor-que-2">
+<h3>2.5.4.4. Relaciones de grado mayor que 2<a class="headerlink" href="#relaciones-de-grado-mayor-que-2" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Relaciones n-arias (solo veremos hasta grado 3): Siempre generan 
+tabla. Las claves principales de las entidades que participan en la 
+relación pasan a la nueva tabla como claves foráneas. Y solo las de los 
+lados «n» forman la principal. Si hay atributos propios de la relación, 
+estos se incluyen en esa tabla.
+Ejemplo: No encontramos ningún ejemplo de relación de más de grado 2 en 
+el supuesto anterior. Se verán cuando aparezcan en algún ejercicio.</p>
+</div>
+<div class="section" id="relaciones-reflexivas">
+<h3>2.5.4.5. Relaciones reflexivas<a class="headerlink" href="#relaciones-reflexivas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Relaciones Reflexivas o Recursivas: Generan tabla o no en función de 
+la cardinalidad.
+Si es 1:1, no genera tabla. En la entidad se introduce dos veces la 
+clave, una como clave principal y otra como clave ajena. Se suele 
+introducir una modificación en el nombre por diferenciarlas.
+Si es 1:N, se puede generar tabla o no. Si hubiese participación 0 en el
+ lado 1, obligatoriamente se generaría tabla.
+Si es N:N, la relación genera tabla.</p>
+<p>Ejemplo:
+Realicemos el paso a tablas de la relación reflexiva de ALUMNO. Como no 
+tiene participación mínima «0» en el lado 1, no genera tabla. La clave 
+principal de ALUMNOS, volverá a aparecer en ALUMNOS como clave foránea, 
+igual que en cualquier relación 1:N. Ahora bien, como no puede haber dos
+ campos con el mismo nombre en la misma tabla, deberemos cambiar un poco
+ el nombre de la clave principal, para que haga referencia al papel que 
+ocupa como clave foránea.</p>
+<img alt="../_images/tema2-059.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-059.png">
+</div>
+<div class="section" id="jerarquias">
+<h3>2.5.4.6. Jerarquías<a class="headerlink" href="#jerarquias" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Eliminación de las relaciones jerárquicas: Las relaciones jerárquicas
+ son un caso especial. Se pueden dar algunas guías que sirvan de 
+referencia, pero en la mayoría de los casos, va a depender del problema 
+concreto. Estas guías son:
+Se creará una tabla para la entidad supertipo. A no ser que tenga tan 
+pocos atributos que dejarla sea una complicación.
+Si la entidad subtipo no tiene atributos y no está relacionada con 
+ninguna otra entidad, desaparece.
+Si la entidad subtipo tiene algún atributo, se crea una tabla. Si no 
+tiene clave propia, hereda la de la entidad supertipo.
+Si la relación es exclusiva, el atributo que genera la jerarquía se 
+incorpora en la tabla de la entidad supertipo. Si se ha creado una tabla
+ por cada una de las entidades subtipo, no es necesario incorporar dicho
+ atributo a la entidad supertipo.
+Ejemplo: No encontramos ningún ejemplo de relación de jerarquía 2 en el 
+supuesto anterior. Su paso a tablas, se verán en cuando aparezcan en los
+ ejemplos concretos.</p>
+</div>
+</div>
+</div>
+<div class="section" id="normalizacion">
+<h1>2.6. NORMALIZACIÓN<a class="headerlink" href="#normalizacion" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El diseño de una BD relacional se puede realizar aplicando al mundo 
+real, en una primera fase, un modelo como el modelo E/R, a fin de 
+obtener un esquema conceptual; en una segunda fase, se transforma dicho 
+esquema al modelo relacional mediante las correspondientes reglas de 
+transformación. También es posible, aunque quizás menos recomendable, 
+obtener el esquema relacional sin realizar ese paso intermedio que es el
+ esquema conceptual. En ambos casos, es conveniente (obligatorio en el 
+modelo relacional directo) aplicar un conjunto de reglas, conocidas como
+ Teoría de normalización, que nos permiten asegurar que un esquema 
+relacional cumple unas ciertas propiedades, evitando:</p>
+<ul class="simple">
+<li>La redundancia de los datos: repetición de datos en un sistema.</li>
+<li>Anomalías de actualización: inconsistencias de los datos como resultado de datos redundantes y actualizaciones parciales.</li>
+<li>Anomalías de borrado: pérdidas no intencionadas de datos debido a que se han borrado otros datos.</li>
+<li>Anomalías de inserción: imposibilidad de adicionar datos en la base de datos debido a la ausencia de otros datos.</li>
+</ul>
+<p>En la práctica, si la BD se ha diseñado haciendo uso de modelos 
+semánticos como el modelo E/R no suele ser necesaria la normalización. 
+Por otro lado <strong>si nos proporcionan una base de datos creada sin realizar un diseño previo, es muy probable que necesitemos normalizar</strong>.</p>
+<p>En la teoría de bases de datos relacionales, las <strong>formas normales (FN)</strong>
+ proporcionan los criterios para determinar el grado de vulnerabilidad 
+de una tabla a inconsistencias y anomalías lógicas. Cuanto más alta sea 
+la forma normal aplicable a una tabla, menos vulnerable será a 
+inconsistencias y anomalías.
+Edgar F. Codd originalmente definió las tres primeras formas normales (<strong>1FN, 2FN, y 3FN</strong>) en 1970. Estas formas normales se han resumido como requiriendo que <strong>todos los atributos sean atómicos, dependan de la clave completa y en forma directa (no transitiva)</strong>. La forma normal de Boyce-Codd  (<strong>FNBC</strong>) fue introducida en 1974 por los dos autores que aparecen en su denominación. Las cuarta y quinta formas normales (<strong>4FN y 5FN</strong>)
+ se ocupan específicamente de la representación de las relaciones muchos
+ a muchos y uno a muchos entre los atributos y fueron introducidas por 
+Fagin en 1977 y 1979 respectivamente.Cada forma normal incluye a las 
+anteriores.</p>
+<img alt="../_images/tema2-060.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-060.png">
+<p>Antes de dar los conceptos de formas normales veamos unas definiciones previas:</p>
+<ul class="simple">
+<li><strong>Dependencia funcional: A → B</strong>, representa que B es funcionalmente dependiente de A. Para <strong>un valor de A</strong> siempre aparece <strong>un valor de B</strong>.
+Ejemplo: Si A es el D.N.I., y B el Nombre, está claro que para un número de  D.N.I, siempre aparece el mismo nombre de titular.</li>
+<li><strong>Dependencia funcional completa: A → B</strong>, si B depende
+ de A en su totalidad.
+Ejemplo: Tiene sentido plantearse este tipo de dependencia cuando A está
+ compuesto por más de un atributo. Por ejemplo, supongamos que A 
+corresponde al atributo compuesto: D.N.I._Empleado + Cod._Dpto. y B es 
+Nombre_Dpto. En este caso B depende del Cod_Dpto., pero no del 
+D.N.I._Empleado. Por tanto no habría dependencia funcional completa.</li>
+<li><strong>Dependencia transitiva: A→B→C</strong>. Si A→B y B→C, 
+Entonces decimos que C depende de forma transitiva de A.
+Ejemplo: Sea A el D.N.I. de un alumno, B la localidad en la que vive y  C
+ la provincia. Es un caso de dependencia transitiva A→ B → C.</li>
+<li><strong>Determinante funcional</strong>: todo atributo, o conjunto de ellos, de los que depende algún otro atributo.
+Ejemplo: El D.N.I. es un determinante funcional pues atributos como nombre, dirección, localidad, etc, dependen de él.</li>
+<li><strong>Dependencia multivaluada: A→→B</strong>. Son un tipo de dependencias en las que un determinante funcional no implica un único valor, sino un conjunto de ellos. <strong>Un valor de A</strong> siempre implica <strong>varios valores de B</strong>.
+Ejemplo: CursoBachillerato →→ Modalidad. Para primer curso siempre va a 
+aparecer en el campo Modalidad uno de los siguientes valores: Ciencias, 
+Humanidades/Ciencias Sociales o Artes. Igual para segundo curso.</li>
+</ul>
+<div class="section" id="primera-forma-normal-1fn">
+<h2>2.6.1. Primera Forma Normal: 1FN<a class="headerlink" href="#primera-forma-normal-1fn" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una Relación está en 1FN si y sólo si cada atributo es atómico.</p>
+<p>Ejemplo: Supongamos que tenemos la siguiente tabla con datos de alumnado de un centro de enseñanza secundaria.</p>
+<div class="wy-table-responsive"><table class="docutils" id="id4" border="1">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id4" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="13%">
+<col width="13%">
+<col width="13%">
+<col width="13%">
+<col width="13%">
+<col width="13%">
+<col width="13%">
+<col width="13%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Nombre</th>
+<th class="head">Curso</th>
+<th class="head">FechaMatrícula</th>
+<th class="head">Tutor</th>
+<th class="head">LocalidadAlumno</th>
+<th class="head">ProvinciaAlumno</th>
+<th class="head">Teléfonos</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Eva</td>
+<td>1ESO-A</td>
+<td>01-Julio-2016</td>
+<td>Isabel</td>
+<td>Écija</td>
+<td>Sevilla</td>
+<td>660111222</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Ana</td>
+<td>1ESO-A</td>
+<td>09-Julio-2016</td>
+<td>Isabel</td>
+<td>Écija</td>
+<td>Sevilla</td>
+<td>660222333 660333444 660444555</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>Susana</td>
+<td>1ESO-B</td>
+<td>11-Julio-2016</td>
+<td>Roberto</td>
+<td>Écija</td>
+<td>Sevilla</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>Juan</td>
+<td>2ESO-A</td>
+<td>05-Julio-2016</td>
+<td>Federico</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>José</td>
+<td>2ESO-A</td>
+<td>02-Julio-2016</td>
+<td>Federico</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+<td>661000111 661000222</td>
+</tr>
+</tbody>
+</table></div>
+<p>Como se puede observar, esta tabla no está en 1FN puesto que el campo
+ Teléfonos contiene varios datos dentro de una misma celda y por tanto 
+no es un campo cuyos valores sean atómicos. La solución sería la 
+siguiente:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id5" border="1">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id5" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Nombre</th>
+<th class="head">Curso</th>
+<th class="head">FechaMatrícula</th>
+<th class="head">Tutor</th>
+<th class="head">LocalidadAlumno</th>
+<th class="head">ProvinciaAlumno</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Eva</td>
+<td>1ESO-A</td>
+<td>01-Julio-2016</td>
+<td>Isabel</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Ana</td>
+<td>1ESO-A</td>
+<td>09-Julio-2016</td>
+<td>Isabel</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>Susana</td>
+<td>1ESO-B</td>
+<td>11-Julio-2016</td>
+<td>Roberto</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>Juan</td>
+<td>2ESO-A</td>
+<td>05-Julio-2016</td>
+<td>Federico</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>José</td>
+<td>2ESO-A</td>
+<td>02-Julio-2016</td>
+<td>Federico</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id6" border="1">
+<caption><span class="caption-text">Teléfonos</span><a class="headerlink" href="#id6" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Teléfono</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>660111222</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>660222333</td>
+</tr>
+<tr class="row-even"><td>22222222B</td>
+<td>660333444</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>660444555</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>661000111</td>
+</tr>
+<tr class="row-odd"><td>55555555E</td>
+<td>661000222</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="section" id="segunda-forma-normal-2fn">
+<h2>2.6.2. Segunda Forma Normal: 2FN<a class="headerlink" href="#segunda-forma-normal-2fn" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una Relación esta en 2FN si y sólo si está en 1FN y todos los 
+atributos que no forman parte de la Clave Principal tienen dependencia 
+funcional completa de ella.</p>
+<p>Ejemplo: Seguimos con el ejemplo anterior. Trabajaremos con la siguiente tabla:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id7" border="1">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id7" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+<col width="14%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Nombre</th>
+<th class="head">Curso</th>
+<th class="head">FechaMatrícula</th>
+<th class="head">Tutor</th>
+<th class="head">LocalidadAlumno</th>
+<th class="head">ProvinciaAlumno</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Eva</td>
+<td>1ESO-A</td>
+<td>01-Julio-2016</td>
+<td>Isabel</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Ana</td>
+<td>1ESO-A</td>
+<td>09-Julio-2016</td>
+<td>Isabel</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>Susana</td>
+<td>1ESO-B</td>
+<td>11-Julio-2016</td>
+<td>Roberto</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>Juan</td>
+<td>2ESO-A</td>
+<td>05-Julio-2016</td>
+<td>Federico</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>José</td>
+<td>2ESO-A</td>
+<td>02-Julio-2016</td>
+<td>Federico</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+</tbody>
+</table></div>
+<p>Vamos a examinar las dependencias funcionales. El gráfico que las representa es el siguiente:</p>
+<img alt="../_images/tema2-062.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-062.png">
+<ul class="simple">
+<li>Siempre que aparece un DNI aparecerá el Nombre correspondiente y la 
+LocalidadAlumno correspondiente. Por tanto  DNI → Nombre  y  DNI → 
+LocalidadAlumno. Por otro lado siempre que aparece un Curso aparecerá el
+ Tutor correspondiente. Por tanto Curso → Tutor. Los atributos Nombre y 
+LocalidadAlumno no dependen funcionalmente de Curso, y el atributo Tutor
+ no depende funcionalmente de DNI.</li>
+<li>El único atributo que sí depende de forma completa de la clave 
+compuesta DNI y Curso es FechaMatrícula: (DNI,Curso) → FechaMatrícula.</li>
+</ul>
+<p>A la hora de establecer la Clave Primaria de una tabla debemos 
+escoger un atributo o conjunto de ellos de los que dependan 
+funcionalmente el resto de atributos. Además debe ser una dependencia 
+funcional completa.
+Si escogemos DNI como clave primaria, tenemos un atributo (Tutor) que no
+ depende funcionalmente de él. Si escogemos Curso como clave primaria, 
+tenemos otros atributos que no dependen de él.</p>
+<p>Si escogemos la combinación (DNI, Curso) como clave primaria, 
+entonces sí tenemos todo el resto de atributos con dependencia funcional
+ respecto a esta clave. Pero es una dependencia parcial, no total (salvo
+ FechaMatrícula, donde sí existe dependencia completa).  Por tanto esta 
+tabla no está en 2FN. La solución sería la siguiente:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id8" border="1">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id8" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Nombre</th>
+<th class="head">Localidad</th>
+<th class="head">Provincia</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Eva</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Ana</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>Susana</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>Juan</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>José</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id9" border="1">
+<caption><span class="caption-text">Matrículas</span><a class="headerlink" href="#id9" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Curso</th>
+<th class="head">FechaMatrícula</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>1ESO-A</td>
+<td>01-Julio-2016</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>1ESO-A</td>
+<td>09-Julio-2016</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>1ESO-B</td>
+<td>11-Julio-2016</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>2ESO-A</td>
+<td>05-Julio-2016</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>2ESO-A</td>
+<td>02-Julio-2016</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id10" border="1">
+<caption><span class="caption-text">Cursos</span><a class="headerlink" href="#id10" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Curso</th>
+<th class="head">Tutor</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1ESO-A</td>
+<td>Isabel</td>
+</tr>
+<tr class="row-odd"><td>1ESO-B</td>
+<td>Roberto</td>
+</tr>
+<tr class="row-even"><td>2ESO-A</td>
+<td>Federico</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="section" id="tercera-forma-normal-3fn">
+<h2>2.6.3. Tercera Forma Normal: 3FN<a class="headerlink" href="#tercera-forma-normal-3fn" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una Relación esta en 3FN si y sólo si está en 2FN y no existen 
+dependencias transitivas. Todas las dependencias funcionales deben ser 
+respecto a la clave principal.</p>
+<p>Ejemplo: Seguimos con el ejemplo anterior. Trabajaremos con la siguiente tabla:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id11" border="1">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id11" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Nombre</th>
+<th class="head">Localidad</th>
+<th class="head">Provincia</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Eva</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Ana</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>Susana</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>Juan</td>
+<td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>José</td>
+<td>Écija</td>
+<td>Sevilla</td>
+</tr>
+</tbody>
+</table></div>
+<p>Las dependencias funcionales existentes son las siguientes. Como 
+podemos observar existe una dependencia funcional transitiva: DNI → 
+Localidad → Provincia</p>
+<img alt="../_images/tema2-064.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-064.png">
+<p>Para que la tabla esté en 3FN, no pueden existir dependencias 
+funcionales transitivas. Para solucionar el problema deberemos crear una
+ nueva tabla. El resultado es:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id12" border="1">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id12" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Nombre</th>
+<th class="head">Localidad</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Eva</td>
+<td>Écija</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Ana</td>
+<td>Écija</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>Susana</td>
+<td>El Villar</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>Juan</td>
+<td>El Villar</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>José</td>
+<td>Écija</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id13" border="1">
+<caption><span class="caption-text">Localidades</span><a class="headerlink" href="#id13" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Localidad</th>
+<th class="head">Provincia</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>RESULTADO FINAL</strong></p>
+<div class="wy-table-responsive"><table class="docutils" id="id14" border="1">
+<caption><span class="caption-text">Alumnos</span><a class="headerlink" href="#id14" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Nombre</th>
+<th class="head">Localidad</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Eva</td>
+<td>Écija</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Ana</td>
+<td>Écija</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>Susana</td>
+<td>El Villar</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>Juan</td>
+<td>El Villar</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>José</td>
+<td>Écija</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id15" border="1">
+<caption><span class="caption-text">Localidades</span><a class="headerlink" href="#id15" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Localidad</th>
+<th class="head">Provincia</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Écija</td>
+<td>Sevilla</td>
+</tr>
+<tr class="row-odd"><td>El Villar</td>
+<td>Córdoba</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id16" border="1">
+<caption><span class="caption-text">Teléfonos</span><a class="headerlink" href="#id16" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Teléfono</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>660111222</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>660222333</td>
+</tr>
+<tr class="row-even"><td>22222222B</td>
+<td>660333444</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>660444555</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>661000111</td>
+</tr>
+<tr class="row-odd"><td>55555555E</td>
+<td>661000222</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id17" border="1">
+<caption><span class="caption-text">Matrículas</span><a class="headerlink" href="#id17" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DNI</th>
+<th class="head">Curso</th>
+<th class="head">FechaMatrícula</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>1ESO-A</td>
+<td>01-Julio-2016</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>1ESO-A</td>
+<td>09-Julio-2016</td>
+</tr>
+<tr class="row-even"><td>33333333C</td>
+<td>1ESO-B</td>
+<td>11-Julio-2016</td>
+</tr>
+<tr class="row-odd"><td>44444444D</td>
+<td>2ESO-A</td>
+<td>05-Julio-2016</td>
+</tr>
+<tr class="row-even"><td>55555555E</td>
+<td>2ESO-A</td>
+<td>02-Julio-2016</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id18" border="1">
+<caption><span class="caption-text">Cursos</span><a class="headerlink" href="#id18" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Curso</th>
+<th class="head">Tutor</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1ESO-A</td>
+<td>Isabel</td>
+</tr>
+<tr class="row-odd"><td>1ESO-B</td>
+<td>Roberto</td>
+</tr>
+<tr class="row-even"><td>2ESO-A</td>
+<td>Federico</td>
+</tr>
+</tbody>
+</table></div>
+<img alt="../_images/tema2-066.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-066.png">
+</div>
+<div class="section" id="forma-normal-de-boyce-codd-fnbc">
+<h2>2.6.4. Forma Normal de Boyce-Codd: FNBC<a class="headerlink" href="#forma-normal-de-boyce-codd-fnbc" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una Relación esta en FNBC si está en 3FN y no existe solapamiento de 
+claves candidatas. Solamente hemos de tener en cuenta esta forma normal 
+cuando tenemos varias claves candidatas compuestas y existe solapamiento
+ entre ellas. Pocas veces se da este caso.</p>
+<p>Ejemplo: Tenemos una tabla con información de proveedores, códigos de
+ piezas y cantidades de esa pieza que proporcionan los proveedores. Cada
+ proveedor tiene un nombre único. Los datos son:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id19" border="1">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id19" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">CIF</th>
+<th class="head">Nombre</th>
+<th class="head">CódigoPieza</th>
+<th class="head">CantidadPiezas</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>S-11111111A</td>
+<td>Ferroman</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr class="row-odd"><td>B-22222222B</td>
+<td>Ferrotex</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr class="row-even"><td>M-33333333C</td>
+<td>Ferropet</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>S-11111111A</td>
+<td>Ferroman</td>
+<td>2</td>
+<td>20</td>
+</tr>
+<tr class="row-even"><td>S-11111111A</td>
+<td>Ferroman</td>
+<td>3</td>
+<td>15</td>
+</tr>
+<tr class="row-odd"><td>B-22222222B</td>
+<td>Ferrotex</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>B-22222222B</td>
+<td>Ferrotex</td>
+<td>3</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+<p>El gráfico de dependencias funcionales es el siguiente:</p>
+<img alt="../_images/tema2-067.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-067.png">
+<p>El atributo CantidadPiezas tiene dependencia funcional de dos claves candidatas compuestas, que son:</p>
+<ul class="simple">
+<li>(NombreProveedor, CodigoPieza)</li>
+<li>(CIFProveedor, CódigoPieza)</li>
+</ul>
+<p>Existe también una dependencia funcional en doble sentido (que no nos afecta): NombreProveedor &lt;-&gt; CIFProveedor.</p>
+<p>Para esta tabla existe un solapamiento de 2 claves candidatas 
+compuestas. Para evitar el solapamiento de claves candidatas dividimos 
+la tabla. La solución es:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id20" border="1">
+<caption><span class="caption-text">Proveedores</span><a class="headerlink" href="#id20" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">CIF</th>
+<th class="head">Nombre</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>S-11111111A</td>
+<td>Ferroman</td>
+</tr>
+<tr class="row-odd"><td>B-22222222B</td>
+<td>Ferrotex</td>
+</tr>
+<tr class="row-even"><td>M-33333333C</td>
+<td>Ferropet</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id21" border="1">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id21" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">CIF</th>
+<th class="head">CódigoPieza</th>
+<th class="head">CantidadPiezas</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>S-11111111A</td>
+<td>1</td>
+<td>10</td>
+</tr>
+<tr class="row-odd"><td>B-22222222B</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr class="row-even"><td>M-33333333C</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>S-11111111A</td>
+<td>2</td>
+<td>20</td>
+</tr>
+<tr class="row-even"><td>S-11111111A</td>
+<td>3</td>
+<td>15</td>
+</tr>
+<tr class="row-odd"><td>B-22222222B</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>B-22222222B</td>
+<td>3</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="section" id="cuarta-forma-normal-4fn">
+<h2>2.6.5. Cuarta Forma Normal: 4FN<a class="headerlink" href="#cuarta-forma-normal-4fn" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Una Relación esta en 4FN si y sólo si está en 3FN (o FNBC) y las 
+únicas dependencias  multivaluadas son aquellas que dependen de las 
+claves candidatas.</p>
+<p>Ejemplo: Tenemos una tabla con la información de nuestros alumnos y 
+alumnas y las asignaturas que cursan así como los deportes que 
+practican.</p>
+<div class="wy-table-responsive"><table class="docutils" id="id22" border="1">
+<caption><span class="caption-text">Alumnado</span><a class="headerlink" href="#id22" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Estudiante</th>
+<th class="head">Asignatura</th>
+<th class="head">Deporte</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Matemáticas, Lengua</td>
+<td>Baloncesto</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Matemáticas</td>
+<td>Fútbol, Natación</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id23" border="1">
+<caption><span class="caption-text">Alumnado</span><a class="headerlink" href="#id23" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Estudiante</th>
+<th class="head">Asignatura</th>
+<th class="head">Deporte</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Matemáticas</td>
+<td>Natación</td>
+</tr>
+<tr class="row-odd"><td>11111111A</td>
+<td>Matemáticas</td>
+<td>Baloncesto</td>
+</tr>
+<tr class="row-even"><td>11111111A</td>
+<td>Lengua</td>
+<td>Natación</td>
+</tr>
+<tr class="row-odd"><td>11111111A</td>
+<td>Lengua</td>
+<td>Baloncesto</td>
+</tr>
+<tr class="row-even"><td>22222222B</td>
+<td>Matemáticas</td>
+<td>Fútbol</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Matemáticas</td>
+<td>Natación</td>
+</tr>
+</tbody>
+</table></div>
+<p>Para normalizar esta tabla, debemos darnos cuenta que la oferta de 
+asignaturas está compuesta por un conjunto de valores limitado. Igual 
+sucede con los deportes.
+Por tanto existen dos dependencias multivaluadas:</p>
+<ul class="simple">
+<li>Estudiante →→ Asignatura</li>
+<li>Estudiante →→ Deporte</li>
+</ul>
+<p>Por otro lado no existe ninguna dependencia entre la asignatura cursada y el deporte practicado.
+Para normalizar a 4FN creamos 2 tablas:</p>
+<div class="wy-table-responsive"><table class="docutils" id="id24" border="1">
+<caption><span class="caption-text">EstudiaAsignatura</span><a class="headerlink" href="#id24" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Estudiante</th>
+<th class="head">Asignatura</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Matemáticas</td>
+</tr>
+<tr class="row-odd"><td>11111111A</td>
+<td>Lengua</td>
+</tr>
+<tr class="row-even"><td>22222222B</td>
+<td>Matemáticas</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id25" border="1">
+<caption><span class="caption-text">PracticaDeporte</span><a class="headerlink" href="#id25" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Estudiante</th>
+<th class="head">Deporte</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>11111111A</td>
+<td>Natación</td>
+</tr>
+<tr class="row-odd"><td>11111111A</td>
+<td>Baloncesto</td>
+</tr>
+<tr class="row-even"><td>22222222B</td>
+<td>Fútbol</td>
+</tr>
+<tr class="row-odd"><td>22222222B</td>
+<td>Natación</td>
+</tr>
+</tbody>
+</table></div>
+<p>Diagrama E/R equivalente</p>
+<img alt="../_images/tema2-068.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-068.png">
+</div>
+<div class="section" id="quinta-forma-normal-5fn">
+<h2>2.6.6. Quinta Forma Normal: 5FN<a class="headerlink" href="#quinta-forma-normal-5fn" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>La quinta forma normal (5FN), es una generalización de la anterior. 
+También conocida como forma normal de proyección-unión (PJ/NF). Una 
+tabla se dice que está en 5NF si y sólo si está en 4NF y cada 
+dependencia de unión (join) en ella es implicada por las claves 
+candidatas.
+Ejemplo: Tenemos una tabla con varios proveedores que nos proporcionan 
+piezas para distintos proyectos. Asumimos que un Proveedor suministra 
+ciertas Piezas en particular, un Proyecto usa ciertas Piezas, y un 
+Proyecto es suplido por ciertos Proveedores, entonces tenemos las 
+siguientes dependencias multivaluadas:</p>
+<ul class="simple">
+<li>Proveedor →→ Pieza</li>
+<li>Pieza →→ Proyecto</li>
+<li>Proyecto →→ Proveedor</li>
+</ul>
+<p>Se puede observar como se produce un ciclo:</p>
+<ul class="simple">
+<li>Proveedor →→ Pieza →→ Proyecto →→ Proveedor (nuevamente)</li>
+</ul>
+<div class="wy-table-responsive"><table class="docutils" id="id26" border="1">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id26" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Proveedor</th>
+<th class="head">Pieza</th>
+<th class="head">Proyecto</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>E1, E4, E6</td>
+<td>PI3, PI6</td>
+<td>PR2, PR4</td>
+</tr>
+<tr class="row-odd"><td>E2, E5</td>
+<td>PI1, PI2</td>
+<td>PR1, PR3</td>
+</tr>
+<tr class="row-even"><td>E3, E7</td>
+<td>PI4, PI5</td>
+<td>PR5, PR6</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id27" border="1">
+<caption><span class="caption-text">Suministros</span><a class="headerlink" href="#id27" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%">
+<col width="33%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Proveedor</th>
+<th class="head">Pieza</th>
+<th class="head">Proyecto</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>E1</td>
+<td>PI3</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>E1</td>
+<td>PI3</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>E1</td>
+<td>PI6</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>E1</td>
+<td>PI6</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>E4</td>
+<td>PI3</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>E4</td>
+<td>PI3</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>E4</td>
+<td>PI6</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>E4</td>
+<td>PI6</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>E6</td>
+<td>PI3</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>E6</td>
+<td>PI3</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>E6</td>
+<td>PI6</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>E6</td>
+<td>PI6</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>E2</td>
+<td>PI1</td>
+<td>PR1</td>
+</tr>
+<tr class="row-odd"><td>E2</td>
+<td>PI1</td>
+<td>PR3</td>
+</tr>
+<tr class="row-even"><td>E2</td>
+<td>PI2</td>
+<td>PR1</td>
+</tr>
+<tr class="row-odd"><td>E2</td>
+<td>PI2</td>
+<td>PR3</td>
+</tr>
+<tr class="row-even"><td>E5</td>
+<td>PI1</td>
+<td>PR1</td>
+</tr>
+<tr class="row-odd"><td>E5</td>
+<td>PI1</td>
+<td>PR3</td>
+</tr>
+<tr class="row-even"><td>E5</td>
+<td>PI2</td>
+<td>PR1</td>
+</tr>
+<tr class="row-odd"><td>E5</td>
+<td>PI2</td>
+<td>PR3</td>
+</tr>
+<tr class="row-even"><td>E3</td>
+<td>PI4</td>
+<td>PR5</td>
+</tr>
+<tr class="row-odd"><td>E3</td>
+<td>PI4</td>
+<td>PR6</td>
+</tr>
+<tr class="row-even"><td>E3</td>
+<td>PI5</td>
+<td>PR5</td>
+</tr>
+<tr class="row-odd"><td>E3</td>
+<td>PI5</td>
+<td>PR6</td>
+</tr>
+<tr class="row-even"><td>E7</td>
+<td>PI4</td>
+<td>PR5</td>
+</tr>
+<tr class="row-odd"><td>E7</td>
+<td>PI4</td>
+<td>PR6</td>
+</tr>
+<tr class="row-even"><td>E7</td>
+<td>PI5</td>
+<td>PR5</td>
+</tr>
+<tr class="row-odd"><td>E7</td>
+<td>PI5</td>
+<td>PR6</td>
+</tr>
+</tbody>
+</table></div>
+<p>Descomponemos la tabla en 3 tabla nuevas:  Proveedor-Pieza, Pieza-Proyecto, Proyecto-Proveedor.</p>
+<div class="wy-table-responsive"><table class="docutils" id="id28" border="1">
+<caption><span class="caption-text">Proveedor-Pieza</span><a class="headerlink" href="#id28" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Proveedor</th>
+<th class="head">Pieza</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>E1</td>
+<td>PI3</td>
+</tr>
+<tr class="row-odd"><td>E1</td>
+<td>PI6</td>
+</tr>
+<tr class="row-even"><td>E4</td>
+<td>PI3</td>
+</tr>
+<tr class="row-odd"><td>E4</td>
+<td>PI6</td>
+</tr>
+<tr class="row-even"><td>E6</td>
+<td>PI3</td>
+</tr>
+<tr class="row-odd"><td>E6</td>
+<td>PI6</td>
+</tr>
+<tr class="row-even"><td>E2</td>
+<td>PI1</td>
+</tr>
+<tr class="row-odd"><td>E2</td>
+<td>PI2</td>
+</tr>
+<tr class="row-even"><td>E5</td>
+<td>PI1</td>
+</tr>
+<tr class="row-odd"><td>E5</td>
+<td>PI2</td>
+</tr>
+<tr class="row-even"><td>E3</td>
+<td>PI4</td>
+</tr>
+<tr class="row-odd"><td>E3</td>
+<td>PI5</td>
+</tr>
+<tr class="row-even"><td>E7</td>
+<td>PI4</td>
+</tr>
+<tr class="row-odd"><td>E7</td>
+<td>PI5</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id29" border="1">
+<caption><span class="caption-text">Pieza-Proyecto</span><a class="headerlink" href="#id29" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Pieza</th>
+<th class="head">Proyecto</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>PI3</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>PI3</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>PI6</td>
+<td>PR2</td>
+</tr>
+<tr class="row-odd"><td>PI6</td>
+<td>PR4</td>
+</tr>
+<tr class="row-even"><td>PI1</td>
+<td>PR1</td>
+</tr>
+<tr class="row-odd"><td>PI1</td>
+<td>PR3</td>
+</tr>
+<tr class="row-even"><td>PI2</td>
+<td>PR1</td>
+</tr>
+<tr class="row-odd"><td>PI2</td>
+<td>PR3</td>
+</tr>
+<tr class="row-even"><td>PI4</td>
+<td>PR5</td>
+</tr>
+<tr class="row-odd"><td>PI4</td>
+<td>PR6</td>
+</tr>
+<tr class="row-even"><td>PI5</td>
+<td>PR5</td>
+</tr>
+<tr class="row-odd"><td>PI5</td>
+<td>PR6</td>
+</tr>
+</tbody>
+</table></div>
+<div class="wy-table-responsive"><table class="docutils" id="id30" border="1">
+<caption><span class="caption-text">Proyecto-Proveedor</span><a class="headerlink" href="#id30" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Proyecto</th>
+<th class="head">Proveedor</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>PR2</td>
+<td>E1</td>
+</tr>
+<tr class="row-odd"><td>PR4</td>
+<td>E1</td>
+</tr>
+<tr class="row-even"><td>PR2</td>
+<td>E4</td>
+</tr>
+<tr class="row-odd"><td>PR4</td>
+<td>E4</td>
+</tr>
+<tr class="row-even"><td>PR2</td>
+<td>E6</td>
+</tr>
+<tr class="row-odd"><td>PR4</td>
+<td>E6</td>
+</tr>
+<tr class="row-even"><td>PR1</td>
+<td>E2</td>
+</tr>
+<tr class="row-odd"><td>PR3</td>
+<td>E2</td>
+</tr>
+<tr class="row-even"><td>PR1</td>
+<td>E5</td>
+</tr>
+<tr class="row-odd"><td>PR3</td>
+<td>E5</td>
+</tr>
+<tr class="row-even"><td>PR5</td>
+<td>E3</td>
+</tr>
+<tr class="row-odd"><td>PR6</td>
+<td>E3</td>
+</tr>
+<tr class="row-even"><td>PR5</td>
+<td>E7</td>
+</tr>
+<tr class="row-odd"><td>PR6</td>
+<td>E7</td>
+</tr>
+</tbody>
+</table></div>
+<p>El producto natural de estas 3 tablas nos da la tabla original.
+Proveedor-Pieza |x| Pieza-Proyecto |x| Proyecto-Proveedor = Suministros</p>
+<p>Diagrama E/R equivalente</p>
+<img alt="../_images/tema2-069.png" src="BDs%20UT2%20-%20%20INTRODUCCI%C3%93N%20%E2%80%94%20Gesti%C3%B3n%20de%20Bases%20de%20Datos_files/tema2-069.png">
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&nbsp;&nbsp;<a href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/index.html">2. DISEÑO DE MODELOS LÓGICOS NORMALIZADOS</a>
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+        <a class="uplink" href="https://gestionbasesdatos.readthedocs.io/es/latest/index.html">Contenidos</a>
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+        <a href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/Actividades.html">2.7. ACTIVIDADES RESUELTAS</a>&nbsp;&nbsp;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+      Creado con <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  
+<div id="rtd-uip0g499"></div><!-- Inserted RTD Footer -->
+<div class="injected">
+
+  
+  <div class="rst-versions rst-badge" data-toggle="rst-versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book">&nbsp;</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        <dd><a href="https://gestionbasesdatos.readthedocs.io/es/latest/Tema2/Teoria.html">latest</a></dd>
+         </strong> 
+        
+        
+        <dd><a href="https://gestionbasesdatos.readthedocs.io/es/stable/Tema2/Teoria.html">stable</a></dd>
+        
+        
+      </dl>
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://readthedocs.org/projects/gestionbasesdatos/downloads/pdf/latest/">PDF</a></dd>
+        
+        <dd><a href="https://readthedocs.org/projects/gestionbasesdatos/downloads/htmlzip/latest/">HTML</a></dd>
+        
+        <dd><a href="https://readthedocs.org/projects/gestionbasesdatos/downloads/epub/latest/">Epub</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/gestionbasesdatos/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/gestionbasesdatos/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/gestionbasesdatos/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/jamj2000/GestionBasesDatos/blob/master/Tema2/Teoria.rst">View</a>
+        </dd>
+        
+        <dd>
+          <a href="https://github.com/jamj2000/GestionBasesDatos/edit/master/Tema2/Teoria.rst">Edit</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="//readthedocs.org/projects/gestionbasesdatos/search/" method="get">
+              <input type="text" name="q" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+
+
+      <hr>
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+    </div>
+  </div>
+  
+
+</div>
+</body></html>
