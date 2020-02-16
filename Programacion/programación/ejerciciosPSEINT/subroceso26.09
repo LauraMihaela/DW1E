@@ -1,0 +1,18 @@
+
+
+SubProceso Pedir_datos (nombre Por Referencia, apell Por Valor)
+	Escribir "Ingresar el Nombre";
+	Leer nombre;
+	escribir "Ingresar el apellido ";
+	Leer apell;
+	Escribir "estoy en subProceso y veo apellido:", apell;
+FinSubProceso
+
+Proceso Principal
+	Definir nombre, apellido como Cadenas;
+	nombre<-"No hay cambios en nomre";
+	apellido<-"No hay cambios en apellido";
+	Pedir_datos(nombre, apellido);
+	Escribir "Nombre completo", nombre," ",apellido;
+	
+FinProceso
