@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset=UTF-8>
+    <meta name="author" content="Laura Gheorghiu">
+    <meta name ="description" content="Práctica 4: Formularios">
+		<title>Práctica 4:Ejemplo4 Formularios</title>
+		
+</head>
+	
+<body>
+					<table  border="0" align="center" cellspacing="0"  bordercolor="000000" >
+						<FORM ACTION="mailto:gheorghiulaura@yahoo.com"METHOD="POST" ENCTYPE="TEXT/PLAIN">
+						<tr><center>
+						<th colspan="3">revista abierta</th></center>
+						</tr>
+						<tr>
+							<td >Nombre: <input type="text" name="nombre" MAXLENGTH="4" size="10"></td>
+							<td >Primer apellido: <input type="text" name="Primer apellido" size="8" MAXLENGTH="4"></td>
+							<td >Segundo apellido: <input type="text" name="Segundo apellido" size="8" MAXLENGTH="4"></td>
+						</tr>
+						<tr>
+							<td colspan="3" >Dirección:   <input type="text" name="Dirección"  value =" calle o plaza, número y piso. "size="35"></td>
+						</tr>
+						<tr >
+							<td colspan="3" >e-mail:<input type="text" name="e-mail" size="35" MAXLENGTH="4"></td>
+						</tr>
+						<tr>
+							<td colspan="3" >contraseña:<input type="text" name="contraseña" size="10" MAXLENGTH="4"></td>
+						</tr>
+						<tr>
+							<td colspan="3">sexo:<br>
+							<INPUT TYPE="radio" NAME="Lista" />Varón<br>
+                            <INPUT TYPE="radio" NAME="Lista1"/>Mujer<br>
+						</tr>
+						
+						<tr>
+							<td colspan="3"> Nivel de estudios :<br>
+							<INPUT TYPE="radio" NAME="Lista" checked="checked"/>Certificado escolar <br>
+                            <INPUT TYPE="radio" NAME="Lista1"/>Graduado en E.S.O. <br>
+							<INPUT TYPE="radio" NAME="Lista" />Bachiller - Formación Profesional <br>
+                            <INPUT TYPE="radio" NAME="Lista1"/>Diplomado<br>
+							<INPUT TYPE="radio" NAME="Lista1"/>Licenciado o Doctorado <br>
+							</td>
+							
+						</tr>
+						<tr>
+						    <td></td>
+							<td colspan="2">Recibir artículos sobre los siguientes temas: <br>
+							<INPUT TYPE="checkbox" NAME="Lista" />Música<br>
+                            <INPUT TYPE="checkbox" NAME="Lista1"/>Deportes<br>
+                            <INPUT TYPE="checkbox" NAME="Lista2"/>Cine<br>
+                            <INPUT TYPE="checkbox" NAME="Lista3"/>Libros<br>
+							<INPUT TYPE="checkbox" NAME="Lista3"/>Ciencia<br>
+							</td>
+							
+						</tr>
+						<tr>
+							<td></td>
+							<td colspan="2">Frecuencia con la que se recibirá la revista: <br>
+							<select id="opcion" name="opcion">
+						<optgroup label="Opción">
+							<option value="mensual">mensual</option>
+						<option value="semanal">semanal</option>
+						<option value="Other">other</option>
+						</optgroup>
+					</select>
+							</td>
+						</tr>
+						<tr>
+						<td></td>
+						<td colspan="2">puedes mandar tu artículo sobre cualquier tema de los que tratamos. Nosotros lo <br>
+						valoraremos para que pùeda ser pùblicado. <br>
+						mandar artículo:<br>
+						Si deseas mandar simplemente una opinion o comentario escribelo aquí.<br>
+						<textarea  name=”comentarios” rows="4" cols="30"></textarea><br>
+						</td>
+						</tr>
+						<tr>
+						<td colspan="3">Borrar todos los datos del formulario y volver a empezar:<INPUT TYPE="submit" VALUE="borrar datos"/>
+						</td>
+						</tr>
+						<tr>
+						<td colspan="3">Enviar formulario por correo electronico: Al pulsar en el botón se abrirá la pagina de envío de<br> 
+						correo: en esa página pulsa en enviar:<br>
+						<INPUT TYPE="submit" VALUE="enviar por correo"/>
+						</td>
+						</tr>
+							</form>
+						</table>
+						
+			
+			
+			
+		
+		
+	</body>
+	
+</html>

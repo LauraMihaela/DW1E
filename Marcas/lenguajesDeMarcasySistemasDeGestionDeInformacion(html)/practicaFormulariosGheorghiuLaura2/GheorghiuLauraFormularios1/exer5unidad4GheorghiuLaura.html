@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta charset=UTF-8>
+    <meta name="author" content="Laura Gheorghiu">
+    <meta name ="description" content="Práctica 4: Formularios">
+		<title>Práctica 4:Ejemplo5 Formularios</title>
+		
+</head>
+	
+<body>
+					<table  border="1" align="center" cellspacing="0"  bordercolor="000000" >
+						<FORM ACTION="mailto:gheorghiulaura@yahoo.com"METHOD="POST" ENCTYPE="TEXT/PLAIN">
+						<tr><center>
+						<th colspan="2">OPINIONES WEB</th></center>
+						</tr>
+						<tr>
+							<td colspan="2" >Nombre: <input type="text" name="nombre" MAXLENGTH="4" size="10"></td>
+						</tr>
+						<tr>
+							<td colspan="2">Apellidos: <input type="text" name="apelidos" size="15" MAXLENGTH="4"></td>
+						</tr>
+						<tr >
+							<td colspan="2" >Correo electrónico:<input type="text" name="e-mail" size="20" value ="@" MAXLENGTH="4"></td>
+						</tr>
+						<tr>
+							<td colspan="2" >Población:<input type="text" name="población" size="10" MAXLENGTH="4"></td>
+						</tr>
+							<td colspan="2" >Provincia: :<input type="text" name="provincia: " size="10" MAXLENGTH="4"></td>
+						</tr>
+						
+						<tr>
+							<td>Edad:<br>
+							<INPUT TYPE="radio" NAME="Lista" />0-20<br>
+                            <INPUT TYPE="radio" NAME="Lista1"/>20-40<br>
+							<INPUT TYPE="radio" NAME="Lista" />40-60<br>
+                            <INPUT TYPE="radio" NAME="Lista1"/>60-100<br>
+							</td>
+							<td>¿Cómo nos conociste? <br>
+							<INPUT TYPE="checkbox" NAME="Lista" />A través de un amigo. <br>
+                            <INPUT TYPE="checkbox" NAME="Lista1"/>A través de un buscador. <br>
+                            <INPUT TYPE="checkbox" NAME="Lista2"/>Navegando por la red<br>
+                            <INPUT TYPE="checkbox" NAME="Lista3"/>Otros<br>
+							</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2">Opinión sobre nuestra página web<br>
+							<textarea  name=”comentarios” rows="2" cols="30"></textarea><br>
+							</td>
+						</tr>
+						<tr>
+						   <td colspan="2"> Tiene alguna sugerencia...<br>
+						   <textarea  name=”comentarios” rows="2" cols="30"></textarea><br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">¿Cúanto navegas por intenet? (Señala la opción que más se acerque) <br> 
+							<select id="horas" name="horas">
+						<optgroup label="Horas">
+							<option value="opcion1">2 horas al día</option>
+						<option value="Opcion2">4 horas al día</option>
+						<option value="Other">Otro</option>
+						</optgroup>
+					</select>
+							</td>
+						</tr>
+						<tr>
+						<td colspan="2"> 
+						<center><INPUT TYPE="submit" VALUE="enviar formulario"/>
+							<INPUT TYPE="reset" VALUE="borrar formulario"/ ><center>
+							</td>
+						</tr>
+						
+							</form>
+						</table>
+	</body>
+	
+</html>

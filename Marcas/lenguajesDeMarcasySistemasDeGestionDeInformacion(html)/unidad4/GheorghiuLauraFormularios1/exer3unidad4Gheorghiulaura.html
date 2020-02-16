@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta charset=UTF-8>
+    <meta name="author" content="Laura Gheorghiu">
+    <meta name ="description" content="Práctica 4: Formularios">
+		<title>Práctica 4:Ejemplo4 Formularios</title>
+		
+</head>
+	
+	<body>
+		<table  border="1" align="center" cellspacing="0" bordercolor="000000" >
+			<tr>
+				<td>
+					<table  border="1" align="center" cellspacing="0"  bordercolor="000000" >
+						<FORM ACTION="mailto:gheorghiulaura@yahoo.com"METHOD="POST" ENCTYPE="TEXT/PLAIN">
+						<tr>
+							<td >Nombre: <input type="text" name="nombre" MAXLENGTH="4" size="10"></td>
+							<td >F.Nac: <input type="text" name="fecha nac." size="8" MAXLENGTH="4"></td>
+							<td >DNI: <input type="text" name="DNI" size="8" MAXLENGTH="4"></td>
+						</tr>
+						<tr align=center>
+							<td colspan="3" >Dirección:<input type="text" name="Dirección" size="35" MAXLENGTH="4"></td>
+						</tr>
+						<tr align= center>
+							<td colspan="3" >Calle y número:<input type="text" name="Calle y número" size="35" MAXLENGTH="4"></td>
+						</tr>
+						<tr>
+							<td >Código Postal: <input type="text" name="Código Posta" size="8" MAXLENGTH="4"></td>
+							<td colspan="2" >Ciudad:<input type="text" name="Ciudad" size="35" MAXLENGTH="4"></td>
+						</tr>
+						<tr>
+							<td colspan="2">Provincia:<input type="text" name="Provincia" size="30" MAXLENGTH="4"></td>
+							<td >Teléfono:<input type="text" name="Teléfono:" size="8" MAXLENGTH="4"></td>
+						</tr>
+						
+						<tr>
+							<td colspan="3"> Opciòn:<select id="opcion" name="opcion">
+						<optgroup label="Opcion">
+							<option value="opcion1">Opcion1</option>
+						<option value="Opcion2">Opcion2</option>
+						<option value="Other">Otro</option>
+						</optgroup>
+					</select> <label for="pago" align=top>Escoja una opción</label><br/></td>
+							
+						</tr>
+						<tr>
+							<td colspan="3" >Comentarios personales:<textarea  name=”comentarios” rows="2" cols="30"></textarea></td>
+						</tr>
+						<tr>
+							<td colspan="3" >Pulse aquí:
+							<center><INPUT TYPE="submit" VALUE="enviar datos"/>
+							<INPUT TYPE="reset" VALUE="borrar datos"/ ></td></center>
+						</tr>
+							</form>
+						</table>
+						
+				</td>
+			</tr>
+			
+		</table>
+		
+	</body>
+	
+</html>

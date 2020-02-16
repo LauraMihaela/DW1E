@@ -1,0 +1,59 @@
+<html>
+<body>
+<FORM ACTION="mailto:dirección_de_email"METHOD="POST" ENCTYPE="TEXT/PLAIN">
+
+Introduce tus comentarios:<br>
+<textarea  name=”comentarios” rows="10" cols="30"></textarea><br>
+
+Nombre: <input type="text" name="nombre" value="Luis" MAXLENGTH="4"><br>
+Apellidos: <input type="text" name="apellido" size="10"><br>
+Contraseña <INPUT TYPE="password" name="contraseña"><br>
+
+¿Cuál es tu Animal preferido?<BR>
+<SELECT NAME="AnimalPreferido" multiple size="2">
+<OPTION value="Gato">Gato</option>
+<OPTION value="Perro" selected="selected" >Perro</option>
+<OPTION value="León">León </option>
+<OPTION value="Aguila">Aguila </option>
+</SELECT ><br>
+
+<label for="programa">Programa seleccionado</label><br>
+<select id="programa" name="programa">
+<optgroup label="Sistemas Operativos">
+<option value="Windows"selected="selected">Windows</option>
+<option value="Mac">Mac</option>
+<option value="Linux">Linux</option>
+<option value="Other">Otro</option>
+</optgroup>
+<optgroup label="Navegadores">
+<option value="Internet Explorer"selected="selected">Internet Explorer</option>
+<option value="Firefox">Firefox</option>
+<option value="Safari">Safari</option>
+<option value="Opera">Opera</option>
+<option value="Other">Otro</option>
+</optgroup>
+</select><br>
+
+Marca las listas deseadas:<br>
+<INPUT TYPE="checkbox" NAME="Lista" checked="checked"/>Lista<br>
+<INPUT TYPE="checkbox" NAME="Lista1"/>Lista1<br>
+<INPUT TYPE="checkbox" NAME="Lista2"/>Lista2<br>
+<INPUT TYPE="checkbox" NAME="Lista3"/>Lista3<br>
+
+¿Cuál es tuanimalpreferido?<BR/>
+<INPUT TYPE="radio" NAME="Animal" VALUE="Gato"CHECKED=”checked”/> Gato
+<INPUT TYPE="radio" NAME="Animal" VALUE="Perro"/>Perro
+<INPUT TYPE="radio" NAME="Animal"VALUE="Canario"/>Canario
+
+<button name="enviar" type="submit" value=”mandar”><img src="dock.jpeg"></button>
+<button name="resetear" type="reset" value=”borrar”>Resetear</button><br/>
+<button name="boton" type="button" value="boton">Simplemente un botón</button><br/>
+<button name="boton" type="button" value="deshabilitado" disabled="disabled">Botón deshabilitado</button><br/>
+
+<INPUT TYPE="submit" VALUE="Enviar datos"/>
+<INPUT TYPE="reset" VALUE="Reset"/>
+
+</form>
+<p><b>Nota:</b> Como máximo 20 caracteres en un campo de texto.
+</body>
+</html>
